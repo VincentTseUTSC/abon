@@ -1,4 +1,16 @@
 
+
+        <dropdown [openOn]="'click'">
+          <input type="hidden" name="gender">
+          <i class="dropdown icon"></i>
+          <div class="default text">vcc</div>
+          <div class="menu">
+            <div class="item" data-value="1">Choice 1</div>
+            <div class="item" data-value="2">Choice 2</div>
+            <div class="item" data-value="3">Choice 3</div>
+          </div>
+        </dropdown>
+        
 <button class="ui primary button" (click)="toggle()">Toggle (for changing data)</button>
 <table class="ui celled unstackable table">
   <thead>
@@ -18,12 +30,13 @@
       </td>
       <td>
         <dropdown [openOn]="'click'">
-          Dropdown
+          <input type="hidden" name="gender">
           <i class="dropdown icon"></i>
+          <div class="default text">vcc</div>
           <div class="menu">
-            <div class="item">Choice 1</div>
-            <div class="item">Choice 2</div>
-            <div class="item">Choice 3</div>
+            <div class="item" data-value="1">Choice 1</div>
+            <div class="item" data-value="2">Choice 2</div>
+            <div class="item" data-value="3">Choice 3</div>
           </div>
         </dropdown>
       </td>
