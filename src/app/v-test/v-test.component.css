@@ -1,0 +1,8 @@
+.submissions.container  {
+  padding-top: 1em;
+  padding-bottom: 10em;
+  min-height: 100%;
+}
+.selectedFile {
+  font-weight: bold;
+}

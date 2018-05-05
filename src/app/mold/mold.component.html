@@ -1,0 +1,90 @@
+<div class="ui assignments container">
+  <div class="ui dividing header">
+    模子
+  </div>
+<!-- 
+  <button class="ui primary button">
+  	Filter
+  </button> -->
+
+  <dropdown [openOn]="'click'">
+    <input type="hidden" name="gender">
+    <i class="dropdown icon"></i>
+    <div class="default text">vcc</div>
+    <div class="menu">
+      <div class="item" data-value="1">Choice 1</div>
+      <div class="item" data-value="2">Choice 2</div>
+      <div class="item" data-value="3">Choice 3</div>
+    </div>
+  </dropdown>
+
+  <dropdown [openOn]="'click'">
+    <input type="hidden" name="gender">
+    <i class="dropdown icon"></i>
+    <div class="default text">vcc</div>
+    <div class="menu">
+      <div class="item" data-value="1">Choice 1</div>
+      <div class="item" data-value="2">Choice 2</div>
+      <div class="item" data-value="3">Choice 3</div>
+    </div>
+  </dropdown>
+
+  <dropdown [openOn]="'click'">
+    <input type="hidden" name="gender">
+    <i class="dropdown icon"></i>
+    <div class="default text">vcc</div>
+    <div class="menu">
+      <div class="item" data-value="1">Choice 1</div>
+      <div class="item" data-value="2">Choice 2</div>
+      <div class="item" data-value="3">Choice 3</div>
+    </div>
+  </dropdown>
+
+
+
+  <div class="ui icon input">
+    <input type="text" placeholder="filter...">
+    <i class="inverted circular search link icon"></i>
+  </div>
+
+<button class="ui primary button" (click)="toggle()">Toggle (for changing data)</button>
+<table class="ui celled unstackable table">
+  <thead>
+    <tr>
+      <th *ngFor="let col of data.columns">{{col}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of data.data">
+      <td>{{row[0]}}</td>
+      <td>{{row[1]}}</td>
+      <td>{{row[2]}}</td>
+      <td>{{row[3]}}</td>
+      <td>{{row[4]}}</td>
+      <td>
+        <editable [(ngModel)]="row[0]" ngDefaultControl></editable>
+      </td>
+      <td>
+        <dropdown [openOn]="'click'">
+          <input type="hidden" name="gender">
+          <i class="dropdown icon"></i>
+          <div class="default text">vcc</div>
+          <div class="menu">
+            <div class="item" data-value="1">Choice 1</div>
+            <div class="item" data-value="2">Choice 2</div>
+            <div class="item" data-value="3">Choice 3</div>
+          </div>
+        </dropdown>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+  <!-- <m-assignments-add (assignmentAdded)="allStudents.addAssignment($event)">
+  </m-assignments-add>
+  <m-assignments-all #allStudents>
+  </m-assignments-all> -->
+
+  <!-- <mold-add></mold-add> -->
+</div>
