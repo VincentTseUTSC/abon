@@ -32,7 +32,7 @@ export class APIService {
     let requestOptions = new RequestOptions();
 
     requestOptions.params = requestOpts;
-    console.log("11111");
+
     return this._http.get(`${this._apiUrl}/${route}`, requestOptions)
         .map(res => res.json().data)
         .catch(this._parseError);
